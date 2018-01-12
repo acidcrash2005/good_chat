@@ -1,0 +1,6 @@
+<div class="auth-form">
+  <%= form_tag login_path, method: :post do %>
+      <%= text_field_tag :username, "", class: "auth-form--input", placeholder: "Ты хто?", autofocus: true, required: true %>
+      <%= submit_tag "Запомнить", class: "auth-form--submit" %>
+  <% end %>
+</div>
